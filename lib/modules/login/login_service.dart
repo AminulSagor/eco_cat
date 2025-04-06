@@ -8,7 +8,7 @@ import '../../storage/token_storage.dart';
 class LoginService {
   final String _baseUrl = "https://nlrcatalysts.com/api";
 
-  Future<void> loginUser(String email, String password) async {
+  Future<void> loginUser(String email, String password, bool rememberMe) async {
     try {
       final url = Uri.parse("$_baseUrl/login.php");
       final response = await http.post(
@@ -29,6 +29,12 @@ class LoginService {
         final token = user['token'];
 
         await TokenStorage.saveToken(token);
+        if (rememberMe) {
+          await TokenStorage.saveCredentials(email, password);
+        } else {
+          await TokenStorage.clearCredentials();
+        }
+
 
         Get.snackbar(
           "Success",

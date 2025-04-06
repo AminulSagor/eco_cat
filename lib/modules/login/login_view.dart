@@ -13,7 +13,7 @@ class LoginView extends GetView<LoginController> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          height: 1.sh, // Full screen height
+          height: 1.sh,
           padding: EdgeInsets.all(24.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +44,27 @@ class LoginView extends GetView<LoginController> {
                   labelText: 'Password',
                 ),
               ),
-              SizedBox(height: 30.h),
+              SizedBox(height: 20.h),
+
+              /// ✅ Remember Me Checkbox
+              Obx(() => Row(
+                children: [
+                  Spacer(),
+                  Checkbox(
+                    value: controller.rememberMe.value,
+                    onChanged: (val) {
+                      controller.rememberMe.value = val!;
+                    },
+                  ),
+                  Text(
+                    "Remember Me",
+                    style: TextStyle(
+                        fontSize: 14.sp, color: Colors.black),
+                  ),
+                ],
+              )),
+
+              SizedBox(height: 10.h),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -66,7 +86,7 @@ class LoginView extends GetView<LoginController> {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    Get.toNamed(AppPages.signUp); // 👈 Navigate using GetX route name
+                    Get.toNamed(AppPages.signUp);
                   },
                   child: Text(
                     "Sign up for an account",
