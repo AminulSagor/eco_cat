@@ -10,7 +10,7 @@ Future<void> main() async {
   await dotenv.load(fileName: ".env");
 
   final token = await TokenStorage.getToken();
-  final initialRoute = token != null ? AppPages.home : AppPages.INITIAL;
+  //final initialRoute = token != null ? AppPages.home : AppPages.INITIAL;
 
   runApp(
     ScreenUtilInit(
@@ -19,7 +19,7 @@ Future<void> main() async {
       splitScreenMode: true,
       builder: (context, child) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: initialRoute,
+        initialRoute: AppPages.home,
         getPages: AppPages.routes,
         theme: ThemeData.light(), // you had ThemeData.dark()
       ),

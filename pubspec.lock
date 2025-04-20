@@ -87,7 +87,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_dotenv:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_dotenv
       sha256: b7c7be5cd9f6ef7a78429cabd2774d3c4af50e79cb2b7593e3d5d763ef95c61b
@@ -95,7 +95,7 @@ packages:
     source: hosted
     version: "5.2.1"
   flutter_lints:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_lints
       sha256: "5398f14efa795ffb7a33e9b6a08798b26a180edac4ad7db3f231e40f82ce11e1"
@@ -103,7 +103,7 @@ packages:
     source: hosted
     version: "5.0.0"
   flutter_screenutil:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_screenutil
       sha256: "8239210dd68bee6b0577aa4a090890342d04a136ce1c81f98ee513fc0ce891de"
@@ -111,7 +111,7 @@ packages:
     source: hosted
     version: "5.9.3"
   flutter_svg:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_svg
       sha256: d39e7f95621fc84376bc0f7d504f05c3a41488c562f4a8ad410569127507402c
@@ -129,7 +129,7 @@ packages:
     source: sdk
     version: "0.0.0"
   get:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: get
       sha256: c79eeb4339f1f3deffd9ec912f8a923834bec55f7b49c9e882b8fef2c139d425
@@ -137,7 +137,7 @@ packages:
     source: hosted
     version: "4.7.2"
   http:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: http
       sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
@@ -273,7 +273,7 @@ packages:
     source: hosted
     version: "2.1.8"
   shared_preferences:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: shared_preferences
       sha256: "6e8bf70b7fef813df4e9a36f658ac46d107db4b4cfe1048b477d4e453a8159f5"
