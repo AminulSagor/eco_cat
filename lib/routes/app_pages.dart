@@ -5,6 +5,7 @@ import '../modules/dashboard/dashboard_view.dart';
 import '../modules/home/home_view.dart';
 import '../modules/login/login_controller.dart';
 import '../modules/login/login_view.dart';
+
 import '../modules/profile/profile_view.dart';
 import '../modules/signup/signup_controller.dart';
 import '../modules/signup/signup_view.dart';
@@ -46,5 +47,9 @@ class AppPages {
     GetPage(name: '/dashboard', page: () => DashboardView()),
     GetPage(name: '/brands', page: () => BrandsView()),
     GetPage(name: '/profile', page: () => ProfileView()),
+
+
+
+
   ];
 }
